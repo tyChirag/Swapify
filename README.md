@@ -35,5 +35,3 @@ The platform is inspired by the barter system, allowing users to trade goods dir
 - Secure payment integration  
 - Mobile app version  
 
-## 📜 License
-This project is for educational purpose
