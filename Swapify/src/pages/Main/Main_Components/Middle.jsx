@@ -102,12 +102,11 @@ const Middle = () => {
               className={`w-14 h-14 ${item.bg} rounded-full flex items-center justify-center text-2xl`}
             >
               {item.icon}
-               <h1 className={`text-4xl font-bold mt-4 ${item.color}`}>
-              {item.number}
-            </h1>
             </div>
 
-           
+            <h1 className={`text-4xl font-bold mt-4 ${item.color}`}>
+              {item.number}
+            </h1>
 
             <h2 className="text-xl font-semibold mt-2">
               {item.title}

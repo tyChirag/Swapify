@@ -6,11 +6,10 @@ import Main from './pages/Main/Main'
 const App = () => {
   return (
     <div>
-{/* <Routes>
+<Routes>
   <Route path='/' element={<Login/>}/>
-</Routes> */}
-<Main/>
-{/* <Login/> */}
+  <Route path='/home' element={<Main/>}/>
+</Routes>
     </div>
   )
 }
