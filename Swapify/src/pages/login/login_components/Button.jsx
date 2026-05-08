@@ -3,16 +3,16 @@ import { useNavigate } from 'react-router-dom'
 
 const Button = (props) => {
  const navigate= useNavigate()
-  const User="chirag.t25126@nst.rishihood.edu.in"
-  const pass="1234"
+  // const User="chirag@gmail"
+  // const pass="1234"
 function btnClicked(){
   console.log(props)
- if (props.user==User && props.pass==pass){
+//  if (props.user==User && props.pass==pass){
   navigate("/home")
- }
- else{
-  alert("Wrong Credential Try Again")
- }
+//  }
+//  else{
+//   alert("Wrong Credential Try Again")
+//  }
 }
   return (
     <>

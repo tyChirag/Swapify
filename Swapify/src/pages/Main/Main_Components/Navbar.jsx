@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
+import Mode from './Mode'
 
 const Navbar = () => {
+  const[value,setValue]=useState(1)
   return (
     <div className='flex justify-between px-5 py-5'>
       <div className='flex '>
@@ -9,13 +11,21 @@ const Navbar = () => {
       <h1 className='text-blue-600 font-black text-2xl'>Swapify</h1>
       </div>
       <div className='flex gap-10'>
-        <Link to="/home">Home</Link>
-        <Link to="/Categories" >Categories</Link>
-        <Link to="/trade">Trades</Link>
-        <Link to="/profile">Profile</Link>
+        <Link className='hover:font-bold
+        hover:text-blue-600
+        hover:underline' to="/home">Home</Link>
+        <Link className='hover:font-bold
+        hover:text-blue-600
+        hover:underline' to="/Categories" >Categories</Link>
+        <Link className='hover:font-bold
+        hover:text-blue-600
+        hover:underline' to="/trade">Trades</Link>
+        <Link className='hover:font-bold
+        hover:text-blue-600
+        hover:underline' to="/profile">Profile</Link>
       </div>
       <div className='flex gap-10 px-5'>
-        <button>Mode</button>
+        <Mode value={1} function={setValue}/>
       <button className='bg-blue-600 text-white px-4 py-2 rounded-2xl active:scale-90'>+ Add Item</button></div>
     </div>
   )

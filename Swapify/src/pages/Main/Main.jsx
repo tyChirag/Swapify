@@ -9,6 +9,7 @@ const Main = () => {
       <Navbar/>
       <Submain/>
       <Middle/>
+      
     </div>
   )
 }
